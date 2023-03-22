@@ -1,11 +1,15 @@
 
 import React from 'react'
-import {  } from "./components/searchbar/search.jsx";
+
+import { Home } from "./components/home/Home.jsx";
 
 export const App = () => {
   return (
-    <div>App</div>
+    <div>App
+      <Home />
+
+    </div>
   )
-}
+};
 
 export default App
