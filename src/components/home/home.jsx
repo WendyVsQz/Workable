@@ -1,8 +1,12 @@
 import React from 'react'
+import "./home.css"
+import JobsAPI from "./jobsAPI"
 
-export const home = () => {
+const home = () => {
   return (
-    <div>home</div>
+    <>
+    <JobsAPI/>
+    </>
   )
 }
 export default home

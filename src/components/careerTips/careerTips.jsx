@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const careerTips = () => {
+const careerTips = () => {
   return (
     <div>careerTips</div>
   )

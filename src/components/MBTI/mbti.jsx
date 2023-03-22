@@ -1,8 +1,12 @@
 import React from 'react'
+import "./mbti.css"
+import TestAPI from "./testAPI"
 
-export const mbti = () => {
+const mbti = () => {
 return (
-    <div>mbti</div>
+    <>
+    <TestAPI/>
+    </>
     )
 }
 

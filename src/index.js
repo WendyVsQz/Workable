@@ -2,7 +2,11 @@ import { createRoot } from 'react-dom/client';
 import App from './App'
 import "./index.css";
 
-const container = document.getElementById('root');
-const root = createRoot(container, <App tab="home"/>);
+const container = document.getElementById('root')
+const root = createRoot(container, <App tab="app"/>);
 
-root.render(<App/>)
+
+root.render(<App/> );
+
+
+

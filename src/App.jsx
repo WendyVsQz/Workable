@@ -1,9 +1,23 @@
-
 import React from 'react'
+import Nav from './components/navbar/navbar'
+import Home from './components/home/home'
+import Wishlist from './components/WishList/wishList'
+/* import CareerTips from './components/careerTips/careerTips'
+import Mbti from './components/MBTI/mbti' */
+import Footer from './components/footer/footer'
 
-export const App = () => {
+const App = () => {
   return (
-    <div>App</div>
+    <>
+    <Nav/>
+    <Home/>
+    <Wishlist/>
+  {/*   <CareerTips/>
+    <Mbti/> */}
+    <Footer/>
+    
+    </>
+
   )
 }
 
