@@ -1,5 +1,8 @@
 import React from 'react'
-import {  } from "./components/searchbar/search.jsx";
+import Nav from "./components/navbar/navbar";
+import Home from "./components/home/Home";
+import Wishlist from "./components/WishList/WishList";
+import Footer from "./components/footer/Footer";
 
 const App = () => {
   return (
