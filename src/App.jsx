@@ -7,10 +7,15 @@ import Mbti from './components/MBTI/mbti' */
 import Footer from './components/footer/footer'
 
 const App = () => {
+  const matPicture = new URL ("./images/istockphoto-868704438-612x612.jpg", import.meta.url)
   return (
     <>
     <Nav/>
     <Home/>
+    <div>
+    <img src={matPicture}/>
+    </div>
+    
     <Wishlist/>
   {/*   <CareerTips/>
     <Mbti/> */}
