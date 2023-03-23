@@ -4,6 +4,7 @@ import { Grid } from '@mui/material';
 import SearchBar from '../Searchbar/SearchBar';
 import Box from '@mui/material/Box';
 import CommonButton from '../CommonButton/CommonButton';
+import GridWrapper from '../GridWrapper/GridWrapper';
 
 const DisplaySearch = () => {
 
@@ -25,10 +26,11 @@ const DisplaySearch = () => {
                 paddingRight: '20px',
                 height: '65px',
                 backgroundColor: '#f5f5f5',
-                borderBottom: '1px solid rgba(0, 0, 0, 0.12',
+                borderBottom: '1px solid rgba(0, 0, 0, 0.12)',
             },
-            addUserButton: {
+            searchButton: {
                 fontSize: '1.05rem',
+                borderRadius: '2.05rem',
             },
         }
 
@@ -44,7 +46,7 @@ const DisplaySearch = () => {
                         variant="contained"
                         onClick={searchBtn}
                         size="large"
-                        sx={headerStyles.addUserButton}
+                        sx={headerStyles.searchButton}
                     >
                         Search
                     </CommonButton>
@@ -54,12 +56,11 @@ const DisplaySearch = () => {
     };
 
     return (
-        <Grid item xs={12} sx={{marginLeft: '200px', marginRight: '200px', backgroundColor: '#eaeff1', padding: '250px 32px', minHeight: 'calc(100vh - 50px)', position: 'relative'}}>
+        <GridWrapper>
             <BasicCard 
                 header={getSearchBar()}           
             />
-        </Grid>
-
+        </GridWrapper>
     )
 }
 
