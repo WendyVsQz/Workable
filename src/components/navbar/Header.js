@@ -11,7 +11,7 @@ const Header = () => {
                 <Typography sx={{ border: '1px' }}>
                      Workable <WorkIcon/>
                 </Typography>
-                <Tabs sx={{marginLeft: '20px'}} textColor='inherit'>
+                <Tabs sx={{marginLeft: '20px'}} textColor='inherit' value={0} indicatorColors="">
                     <Tab label="Home"/>
                     <Tab label="Career Tips"/>
                     <Tab label="Wishlist"/>
