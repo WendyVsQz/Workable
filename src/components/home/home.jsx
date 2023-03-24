@@ -1,11 +1,11 @@
 import React from 'react'
 import "./home.css"
-import JobsAPI from "./jobsAPI"
+// import JobsAPI from "./jobsAPI"
 
 const home = () => {
   return (
     <>
-    <JobsAPI/>
+    {/* <JobsAPI/> */}
     </>
   )
 }
