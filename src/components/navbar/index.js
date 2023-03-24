@@ -1,16 +1,16 @@
 import React from 'react'
-import { AppBar, Tab, Tabs, Toolbar, Typography } from '@mui/material'
+import { AppBar,Tab, Tabs, Toolbar, Typography } from '@mui/material'
 import WorkIcon from '@mui/icons-material/Work';
 
 
 const Header = () => {
-  
-  return (
+
+return (
     <React.Fragment>
-        <AppBar sx={{background:'#1C94D9'}}>
+        <AppBar sx={{background:'#1C94D9'}}> 
             <Toolbar sx={{ display: 'flex', justifyContent: 'space-between'}}>
                 <Typography sx={{ border: '1px' }}>
-                     Workable <WorkIcon/>
+                    Workable <WorkIcon/>
                 </Typography>
                 <Tabs sx={{marginLeft: '20px'}} textColor='inherit'>
                     <Tab label="Home"/>
@@ -19,7 +19,7 @@ const Header = () => {
                 </Tabs>
             </Toolbar>
             
-        </AppBar>
+        </AppBar> 
 
 
     </React.Fragment>
