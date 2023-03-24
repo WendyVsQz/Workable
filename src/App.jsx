@@ -6,11 +6,18 @@ import Wishlist from './components/WishList/wishList'
 import Mbti from './components/MBTI/mbti' */
 import Footer from './components/footer/footer'
 
+const matPicture = new URL ("./images/istockphoto-868704438-612x612.jpg", import.meta.url)
+
 const App = () => {
+  
   return (
     <>
     <Nav/>
     <Home/>
+    <div>
+    <img src={matPicture}/>
+    </div>
+    
     <Wishlist/>
   {/*   <CareerTips/>
     <Mbti/> */}
