@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react';
 import BasicCard from '../BasicCard/BasicCard';
 import SearchBar from '../Searchbar/SearchBar';
 import Box from '@mui/material/Box';
@@ -8,10 +8,23 @@ import { cardheaderStyles } from './styles';
 
 const DisplaySearch = () => {
 
+    // react capturing input
+    const [searchValue, setSearchValue] = useState("");
+
+    const inputRef = useRef();
+    console.log({ inputRef });
+
     const getSearchBar = () => {
-        const handleChange = (value) => {
-            console.log(value);
-        };
+
+        // Search area Listener
+        function handleChange(event) {
+            setSearchValue(event.target.value);
+            console.log(event.target.value);
+        }
+
+        // const handleChange = (value) => {
+        //     console.log(value);
+        // };
 
         const searchBtn = () => {
             console.log('click')
@@ -20,8 +33,11 @@ const DisplaySearch = () => {
         return (
             <Box sx={cardheaderStyles.wrapper}>
                 <SearchBar
-                    placeholder='Search your next job...'
-                    onChange={(event) => handleChange(event.target.value)}
+                    ref={inputRef}
+                    placeholder='Search your next job... '
+                    value={searchValue}
+                    onChange={handleChange}
+                    //onChange={(event) => handleChange(event.target.value)}
                     searchBarWidth='720px'
                 />
                 <Box>

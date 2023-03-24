@@ -1,9 +1,10 @@
 import React from 'react'
 import Button from '@mui/material/Button';
 
-const CommonButton = ({children, color, disabled, size, variant, sx}) => {
+const CommonButton = ({children, onClick, color, disabled, size, variant, sx}) => {
     return (
         <Button
+            onClick={onClick}
             color={color}
             disabled={disabled}
             size={size}

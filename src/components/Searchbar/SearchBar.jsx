@@ -4,12 +4,13 @@ import Input from '@mui/material/Input';
 import Box from '@mui/material/Box';
 
 
-const SearchBar = ({ placeholder, onChange, searchBarWidth }) => {
+const SearchBar = ({ ref, placeholder, onChange, searchBarWidth }) => {
     return (
         <>
             <Box sx={{ display: 'flex', alignItems: 'center' }} >
                 <SearchIcon sx={{ marginRight: '10px' }} />
                 <Input 
+                    ref={ref}
                     placeholder={placeholder}
                     onChange={onChange}
                     sx={{width: searchBarWidth, color: 'rgba(0, 0, 0, 0.6)', fontsize: '1.1rem'}} 
