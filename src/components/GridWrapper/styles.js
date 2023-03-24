@@ -1,9 +1,12 @@
 
 export const gridWrapperStyles = {
-    marginLeft: '200px', 
-    marginRight: '200px', 
-    backgroundColor: '#eaeff1', 
+    marginLeft: '0px', 
+    marginRight: '0px', 
+    backgroundImage: `url('images/landing-page-bkgrd-612x612.jpg')`,
     padding: '250px 32px', 
-    minHeight: 'calc(100vh - 50px)', 
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+    padding: '250px 32px', 
+    minHeight: 'calc(0vh)', 
     position: 'relative',
 };

@@ -1,6 +1,5 @@
 import React from 'react'
 import BasicCard from '../BasicCard/BasicCard';
-import { Grid } from '@mui/material';
 import SearchBar from '../Searchbar/SearchBar';
 import Box from '@mui/material/Box';
 import CommonButton from '../CommonButton/CommonButton';
@@ -17,7 +16,6 @@ const DisplaySearch = () => {
         const searchBtn = () => {
             console.log('click')
         };
-
 
         return (
             <Box sx={cardheaderStyles.wrapper}>
@@ -42,6 +40,7 @@ const DisplaySearch = () => {
 
     return (
         <GridWrapper>
+            
             <BasicCard 
                 header={getSearchBar()}           
             />

@@ -3,10 +3,6 @@ import SearchIcon from '@mui/icons-material/Search';
 import Input from '@mui/material/Input';
 import Box from '@mui/material/Box';
 
-/*export function Search() {
-    return <input type="text" placeholder='Search your next job...'  />;
-}
-*/
 
 const SearchBar = ({ placeholder, onChange, searchBarWidth }) => {
     return (
