@@ -5,6 +5,7 @@ import CardContent from '@mui/material/CardContent';
 
 const BasicCard = ({header, content}) => {
     const cardStyles = {
+        
         width: '1050px',
         position: 'absolute',
         left: '50%',
