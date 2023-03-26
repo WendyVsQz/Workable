@@ -5,7 +5,6 @@ export const apiCall = () => {
 
     axios.get('/api/1.0/search', {
         headers: {
-            'Access-Control-Allow-Origin': '*',
             'Authorization': 'Basic Yzc5YmE0MTgtNGNkNi00Y2FjLTk5NDUtODUwZWNjYzU2ZTJmOg=='
         },
         params: {
