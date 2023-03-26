@@ -1,6 +1,5 @@
 import React from 'react'
 import JobApp from './jobApp'
-import './jobs.css'
 
 function app() {
   return (

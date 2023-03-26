@@ -1,3 +1,10 @@
+# Important 
+
+For resolving the CORS policy issue, please copy the netlify.toml file to build file before you deploy it to Netify.
+![Kiku](./public/screen_cap.png)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
