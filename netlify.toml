@@ -1,0 +1,6 @@
+# Redirects from what the browser requests to what we serve
+[[redirects]]
+  from = "/api/1.0/search/*"
+  to = "https://www.reed.co.uk/api/1.0/search/:splat"
+  status = 200
+  force = true
