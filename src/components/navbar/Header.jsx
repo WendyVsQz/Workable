@@ -1,9 +1,10 @@
-import Index from "./index";
+import NavApp from "./NavApp";
 
 function app() {
+  
   return (
     <div>
-      <Index/>
+      <NavApp/>
     </div>
   );
 }
