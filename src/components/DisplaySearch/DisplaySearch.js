@@ -1,45 +1,52 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useState } from 'react';
 import BasicCard from '../BasicCard/BasicCard';
 import SearchBar from '../Searchbar/SearchBar';
 import Box from '@mui/material/Box';
 import CommonButton from '../CommonButton/CommonButton';
 import GridWrapper from '../GridWrapper/GridWrapper';
 import { cardheaderStyles } from './styles';
+import { ResetSearch } from '../ResetSearch/Resetsearch';
 
 const DisplaySearch = () => {
 
     // react capturing input
     const [searchValue, setSearchValue] = useState("");
 
-    const inputRef = useRef();
-    console.log({ inputRef });
-
     const getSearchBar = () => {
 
         // Search area Listener
         function handleChange(event) {
+            const target = event.target.value;
             setSearchValue(event.target.value);
-            console.log(event.target.value);
+            //console.log(searchValue);
+            console.log(target);
+        }
+        
+        function onClick() {
+            setSearchValue('');
+            console.log('in onclick function');
         }
 
-        // const handleChange = (value) => {
-        //     console.log(value);
-        // };
 
+        // ====== Start searching Job Here =======
         const searchBtn = () => {
-            console.log('click')
-        };
+            //resetSearch();   
+            console.log('click'); 
+            onClick();   
+        }
 
         return (
             <Box sx={cardheaderStyles.wrapper}>
                 <SearchBar
-                    ref={inputRef}
                     placeholder='Search your next job... '
                     value={searchValue}
                     onChange={handleChange}
-                    //onChange={(event) => handleChange(event.target.value)}
                     searchBarWidth='720px'
                 />
+                <ResetSearch 
+                    searchValue={searchValue} 
+                    setSearchValue={setSearchValue}
+                    handleChange={handleChange} />
                 <Box>
                     <CommonButton
                         variant="contained"
@@ -49,8 +56,8 @@ const DisplaySearch = () => {
                     >
                         Search
                     </CommonButton>
-                </Box>
-            </Box>
+                </Box>               
+            </Box>       
         )
     };
 
