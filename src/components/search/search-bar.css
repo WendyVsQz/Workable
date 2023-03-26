@@ -1,0 +1,25 @@
+.search-bar {
+    text-align: center;
+    border-radius: 1rem;
+    margin-top: 5rem;
+}
+
+.search-bar-input {
+    background-color: white;
+    width: 60vw !important;
+    border-radius: inherit;
+
+}
+
+.search-bar-input:focus {
+    border-width: 0 !important;
+    border-color: transparent !important;
+}
+
+.no-outline:focus {
+    outline: none;
+}
+
+.search-button {
+    border-radius: 10rem !important;
+}

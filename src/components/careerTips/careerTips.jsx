@@ -1,8 +1,9 @@
 import React from 'react'
 
-const careerTips = () => {
+const CareerTips = () => {
+  console.log("CareerTips");
   return (
-    <div>careerTips</div>
+    <div>CareerTips</div>
   )
 }
-export default careerTips
+export default CareerTips

@@ -1,17 +1,18 @@
-import React from 'react'
-import "./home.css"
-import Nav from "../navbar/Header"
-//import App from "../api/app"
-import Footer from "../footer/footer"
-import "../footer/style.css"
+import React, { useState } from "react";
+import "../footer/style.css";
+import SearchBar from "../search/search-bar";
+import "./home.css";
 
-const home = () => {
+const Home = () => {
+  const [search, setSearch] = useState();
   return (
     <>
-    <Nav/>
-    
-    <Footer/>
+      <SearchBar
+        label={"Search Youe Next Job"}
+        item={search}
+        setItem={setSearch}
+      />
     </>
-  )
-}
-export default home
+  );
+};
+export default Home;

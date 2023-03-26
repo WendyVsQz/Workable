@@ -1,27 +1,26 @@
-import React from 'react'
-import Nav from './components/navbar/Header'
-import Home from './components/home/home'
-/* import Wishlist from './components/WishList/wishList'
-import CareerTips from './components/careerTips/careerTips' */
-import Footer from './components/footer/footer'
-import Jobs from './components/jobsDiv/jobApp'
-import {apiCall} from './api'
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+
+import CareerTips from "./components/careerTips/careerTips";
+import Footer from "./components/footer/footer";
+import Home from "./components/home/home";
+import Header from "./components/navbar/Header";
+import Wishlist from "./components/WishList/wishlist";
 
 const App = () => {
-  //TODO remove this testing call before production.
-  apiCall()
   return (
     <>
-    <Nav/> 
-    <Home/>
-    <Jobs/>
- {/*    <Wishlist/>
-  <CareerTips/> */}
-    <Footer/>
-    
+      <div>
+        <Header />
+        <Routes>
+          <Route path="/" index element={<Home />} />
+          <Route path="/career-tips" element={<CareerTips />} />
+          <Route path="/wishlist" element={<Wishlist />} />
+        </Routes>
+        <Footer />
+      </div>
     </>
+  );
+};
 
-  )
-}
-
-export default App
+export default App;
