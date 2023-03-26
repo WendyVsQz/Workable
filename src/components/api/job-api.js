@@ -13,8 +13,7 @@ export const searchJob = (title) => {
       },
     })
     .then((response) => {
-      console.log(response.data);
-      // do something with the response data
+      return response.data;
     })
     .catch((error) => {
       console.log(error);

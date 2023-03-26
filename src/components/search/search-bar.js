@@ -1,7 +1,9 @@
 import { Button, InputAdornment, TextField } from "@mui/material";
+import React, { useState } from "react";
 import "./search-bar.css";
 
-const SearchBar = ({ label, item, setItem }) => {
+const SearchBar = ({ label, onClick }) => {
+  const [input, setInput] = useState("");
   return (
     <>
       <div className="search-bar">
@@ -9,13 +11,17 @@ const SearchBar = ({ label, item, setItem }) => {
           className="search-bar-input no-outline"
           type="search"
           placeholder={label}
-          value={item}
-          onChange={(event) => setItem(event.target.value)}
+          value={input}
+          onChange={(event) => setInput(event.target.value)}
           fullWidth
           InputProps={{
             endAdornment: (
               <InputAdornment position="end">
-                <Button variant="contained" className="search-button">
+                <Button
+                  variant="contained"
+                  className="search-button"
+                  onClick={() => onClick(input)}
+                >
                   Search
                 </Button>
               </InputAdornment>

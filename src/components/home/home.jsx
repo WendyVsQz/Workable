@@ -1,17 +1,22 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../footer/style.css";
 import SearchBar from "../search/search-bar";
 import "./home.css";
+import { searchJob } from "../api/job-api";
 
 const Home = () => {
-  const [search, setSearch] = useState();
+  const [jobs, setJobs] = useState();
+
+  useEffect(() => {
+    console.log(jobs);
+  }, [jobs]);
+
+  const handleJobSearch = (input) => {
+    setJobs(searchJob(input));
+  };
   return (
     <>
-      <SearchBar
-        label={"Search Youe Next Job"}
-        item={search}
-        setItem={setSearch}
-      />
+      <SearchBar label={"Search Youe Next Job"} onClick={handleJobSearch} />
     </>
   );
 };

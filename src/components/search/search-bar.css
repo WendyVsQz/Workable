@@ -21,5 +21,6 @@
 }
 
 .search-button {
+    margin-left: .5rem !important;
     border-radius: 10rem !important;
 }
