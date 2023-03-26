@@ -3,7 +3,8 @@ export function ResetSearch({searchValue, setSearchValue, handleChange}) {
 
     if (!searchValue) {
         console.log('Resetsearch: !option');
-        console.log('value is: ',handleChange);
+        const input = handleChange; 
+        console.log('value is: ',input);
         return null;
     } 
     return (

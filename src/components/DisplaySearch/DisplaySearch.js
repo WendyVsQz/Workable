@@ -16,12 +16,19 @@ const DisplaySearch = () => {
 
         // Search area Listener
         function handleChange(event) {
-            const target = event.target.value;
             setSearchValue(event.target.value);
             //console.log(searchValue);
-            console.log(target);
-        }
-        
+
+            const { name, value } = event.target;
+            setSearchValue((prevState) => {
+                return {
+                    ...prevState,
+                    [name]: value,
+                };
+            });    
+        };
+
+        // Function to clear text field
         function onClick() {
             setSearchValue('');
             console.log('in onclick function');
@@ -29,9 +36,13 @@ const DisplaySearch = () => {
 
 
         // ====== Start searching Job Here =======
-        const searchBtn = () => {
-            //resetSearch();   
-            console.log('click'); 
+        const searchBtn = () => {  
+
+            const userSearchedInput = searchValue;
+            console.log(userSearchedInput);
+            console.log('click');
+            
+            // Need to clear search field here!!
             onClick();   
         }
 
