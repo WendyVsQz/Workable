@@ -8,7 +8,7 @@ const BasicCard = ({header, content}) => {
         
         width: '1050px',
         position: 'absolute',
-        left: '50%',
+        left: '200%',
         transform: 'translateX(-50%)',
         borderRadius: '8px',
     }

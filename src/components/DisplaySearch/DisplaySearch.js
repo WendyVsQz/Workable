@@ -17,7 +17,7 @@ const DisplaySearch = () => {
         // Search area Listener
         function handleChange(event) {
             setSearchValue(event.target.value);
-            //console.log(searchValue);
+            console.log(searchValue);
 
             const { name, value } = event.target;
             setSearchValue((prevState) => {
@@ -35,14 +35,18 @@ const DisplaySearch = () => {
         }
 
 
-        // ====== Start searching Job Here =======
+        // ====== Start searching Job Here with API =======
         const searchBtn = () => {  
+                
+            // ==== For now use the "searchValue" variable returned   ==== //
+            // ==== in React Hook - useState("") - on code line No 13 ==== //
 
-            const userSearchedInput = searchValue;
-            console.log(userSearchedInput);
+
+            //const userSearchedInput = searchValue;
+            //console.log(userSearchedInput);
             console.log('click');
             
-            // Need to clear search field here!!
+            // Need to clear search field here within this function!!
             onClick();   
         }
 
