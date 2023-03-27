@@ -1,25 +1,29 @@
-import React from 'react'
-import { AppBar,Tab, Tabs, Toolbar, Typography } from '@mui/material'
-import WorkIcon from '@mui/icons-material/Work';
+import WorkIcon from "@mui/icons-material/Work";
+import React from "react";
+import { Link } from "react-router-dom";
+import "./NavApp.css";
 
-const Header = () => {
-return (
-    <React.Fragment>
-        <AppBar sx={{background:'#1C94D9'}}> 
-            <Toolbar sx={{ display: 'flex', justifyContent: 'space-between'}}>
-                <Typography sx={{ border: '1px' }}>
-                    Workable <WorkIcon/>
-                </Typography>
-                <Tabs sx={{marginLeft: '20px'}} textColor='inherit'> 
-                    <Tab label="Home"/>
-                    <Tab label="Career Tips"/>
-                    <Tab label="Wishlist"/>
-                </Tabs>  
+const NavBar = () => {
+  return (
+    <nav className="nav">
+      <Link to="/" className="site-title">
+        <span>
+          Workable <WorkIcon />
+        </span>
+      </Link>
+      <ul>
+        <li>
+          <Link to="/"> HOME </Link>
+        </li>
+        <li>
+          <Link to="/career-tips">CAREER TIPS</Link>
+        </li>
+        <li>
+          <Link to="/wishlist">WISHLIST</Link>
+        </li>
+      </ul>
+    </nav>
+  );
+};
 
-                </Toolbar>
-                </AppBar> 
-                </React.Fragment>
-    )
-}
-
-export default Header
+export default NavBar;

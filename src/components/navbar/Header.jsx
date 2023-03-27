@@ -1,12 +1,11 @@
 import NavApp from "./NavApp";
 
-function app() {
-  
+function Header() {
   return (
     <div>
-      <NavApp/>
+      <NavApp />
     </div>
   );
 }
 
-export default app;
+export default Header;
