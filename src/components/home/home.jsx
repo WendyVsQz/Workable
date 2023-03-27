@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+import { Container } from "@mui/system";
+import React, { useState } from "react";
+import { searchJob } from "../api/job-api";
+import { CardComponent } from "../card/card-component";
 import "../footer/style.css";
 import SearchBar from "../search/search-bar";
 import "./home.css";
-import { searchJob } from "../api/job-api";
-import { Container } from "@mui/system";
-import { CardComponent } from "../card/card-component";
 
 const Home = () => {
   const [jobs, setJobs] = useState();

@@ -5,7 +5,7 @@ import CareerTips from "./components/careerTips/careerTips";
 import Footer from "./components/footer/footer";
 import Home from "./components/home/home";
 import Header from "./components/navbar/Header";
-import Wishlist from "./components/WishList/wishlist";
+import WishList from "./components/WishList/wishList";
 
 const App = () => {
   return (
@@ -15,7 +15,7 @@ const App = () => {
         <Routes>
           <Route path="/" index element={<Home />} />
           <Route path="/career-tips" element={<CareerTips />} />
-          <Route path="/wishlist" element={<Wishlist />} />
+          <Route path="/wishlist" element={<WishList />} />
         </Routes>
         <Footer />
       </div>
