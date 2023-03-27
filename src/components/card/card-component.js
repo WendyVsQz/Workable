@@ -6,7 +6,6 @@ import * as React from "react";
 import "./card-component.css";
 
 export function CardComponent(props) {
-  console.log(props);
   return (
     <>
       <Card variant="outlined" className="custom-card-layout">

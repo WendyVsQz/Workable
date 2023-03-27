@@ -9,10 +9,6 @@ import { CardComponent } from "../card/card-component";
 const Home = () => {
   const [jobs, setJobs] = useState();
 
-  useEffect(() => {
-    console.log(jobs);
-  }, [jobs]);
-
   const handleJobSearch = (input) => {
     searchJob(input).then((response) => {
       setJobs(response.data.results);
