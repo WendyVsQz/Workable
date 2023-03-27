@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { CardComponent, EmptyCard } from '../card/card-component';
 import { getFromStorage } from '../../utils/storage-utils';
-import { Container } from "@mui/system";
+import { CardComponent, EmptyCard } from '../card/card-component';
 import './wish-list.css';
 
 const WishList = () => {

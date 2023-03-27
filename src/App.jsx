@@ -2,7 +2,6 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 
 import CareerTips from "./components/careerTips/careerTips";
-import Footer from "./components/footer/footer";
 import Home from "./components/home/home";
 import Header from "./components/navbar/Header";
 import WishList from "./components/WishList/wish-list";
@@ -17,7 +16,6 @@ const App = () => {
           <Route path="/career-tips" element={<CareerTips />} />
           <Route path="/wishlist" element={<WishList />} />
         </Routes>
-        <Footer />
       </div>
     </>
   );
