@@ -1,0 +1,12 @@
+.custom-card-layout {
+    margin-bottom: 1rem;
+}
+
+.custom-card-text {
+    margin-bottom: 1.5rem !important;
+}
+
+.detials-button-right {
+    float: right;
+    margin-right: 1rem;
+}
