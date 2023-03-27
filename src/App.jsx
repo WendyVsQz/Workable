@@ -5,7 +5,7 @@ import CareerTips from "./components/careerTips/careerTips";
 import Footer from "./components/footer/footer";
 import Home from "./components/home/home";
 import Header from "./components/navbar/Header";
-import WishList from "./components/WishList/wishList";
+import WishList from "./components/WishList/wish-list";
 
 const App = () => {
   return (

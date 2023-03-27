@@ -17,7 +17,7 @@ export function CardComponent(props) {
 
   const handleBookMark = (job) => {
     // get the existing book marked list
-    let temp = getFromStorage(BOOKMARK);
+    const temp = getFromStorage(BOOKMARK);
     let marked = new Map();
 
     if (temp != null) {
@@ -28,6 +28,10 @@ export function CardComponent(props) {
       // remove job if exist
       marked.delete(job.jobId.toString());
       setBookMarked(false);
+
+      if (props.setRefresh) {
+        props.setRefresh(true);
+      }
     } else {
       // add job to book mark if not exist
       marked.set(job.jobId, job);
@@ -38,7 +42,7 @@ export function CardComponent(props) {
   }
 
   useEffect(() => {
-    let temp = getFromStorage(BOOKMARK);
+    const temp = getFromStorage(BOOKMARK);
     let marked = new Map(Object.entries(temp));
     setBookMarked(marked.get(props.job.jobId.toString()) ? true : false);
   }, [props.job]);
@@ -88,6 +92,26 @@ export function CardComponent(props) {
           <CardActions className="detials-button-right">
             <Button size="small" onClick={() => window.open(props.job.jobUrl, '_blank')}>More</Button>
           </CardActions>
+        </React.Fragment>
+      </Card>
+    </>
+  );
+}
+
+export const EmptyCard = (props) => {
+  return (
+    <>
+      <Card variant="outlined" className="custom-card-layout" >
+        <React.Fragment>
+          <CardContent>
+            <Typography
+              variant="h4"
+              component="div"
+              className="empty-card-text"
+            >
+              {props?.label ? props.label : "No records"}
+            </Typography>
+          </CardContent>
         </React.Fragment>
       </Card>
     </>
