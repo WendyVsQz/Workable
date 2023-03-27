@@ -5,6 +5,7 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import BookmarkIcon from '@mui/icons-material/Bookmark';
 
 const bull = (
   <Box
@@ -18,8 +19,11 @@ const card = (
   <React.Fragment>
     <CardContent>
       <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-        Job title
+        Job title                            
       </Typography>
+        <Typography sx={{marginLeft: 80, height: 9}}>
+        <BookmarkIcon/>
+        </Typography>
       <Typography variant="h5" component="div">
         Fr{bull}nt{bull}end{bull}loper
       </Typography>

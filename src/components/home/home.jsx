@@ -17,7 +17,7 @@ const Home = () => {
 
   return (
     <>
-      <SearchBar label={"Search Youe Next Job"} onClick={handleJobSearch} />
+      <SearchBar label={"Search Your Next Job"} onClick={handleJobSearch} />
       <Container>
         {jobs && jobs.length > 0
           ? jobs.map((job) => <CardComponent {...{ job }} />)
