@@ -11,3 +11,4 @@ export const searchJob = (title) =>
       location: "London",
     },
   });
+console.log(searchJob);

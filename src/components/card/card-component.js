@@ -1,11 +1,14 @@
-import { Card, Button } from "@mui/material";
+import { Card } from "@mui/material";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import * as React from "react";
 import "./card-component.css";
+import  BasicModal from "../modal/modal"
+
 
 export function CardComponent(props) {
+
   return (
     <>
       <Card variant="outlined" className="custom-card-layout">
@@ -33,10 +36,9 @@ export function CardComponent(props) {
               {props.job.locationName}
             </Typography>
           </CardContent>
-          <CardActions className="detials-button-right">
-            <Button size="small">Details</Button>
-            {/* onClick={() => props.handleOnClick(props.project)} */}
-          </CardActions>
+          <CardActions className="details-button-right"> 
+          < BasicModal/>
+        </CardActions>
         </React.Fragment>
       </Card>
     </>
