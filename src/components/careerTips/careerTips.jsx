@@ -3,7 +3,7 @@ import React from 'react'
 const CareerTips = () => {
   console.log("CareerTips");
   return (
-    <div>CareerTips</div>
+    <div>CareerTips test</div>
   )
 }
 export default CareerTips
