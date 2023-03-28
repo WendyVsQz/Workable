@@ -1,4 +1,3 @@
-import { Card } from "@mui/material";
 import BookmarkIcon from '@mui/icons-material/Bookmark';
 import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
 import { Button, Card, Box } from "@mui/material";
@@ -9,7 +8,7 @@ import { decode } from 'html-entities';
 import React, { useEffect, useState } from "react";
 import { getFromStorage, saveToStorage } from '../../utils/storage-utils';
 import "./card-component.css";
-import  BasicModal from "../modal/modal"
+
 
 
 export function CardComponent(props) {
