@@ -43,8 +43,10 @@ export function CardComponent(props) {
 
   useEffect(() => {
     const temp = getFromStorage(BOOKMARK);
-    let marked = new Map(Object.entries(temp));
-    setBookMarked(marked.get(props.job.jobId.toString()) ? true : false);
+    if(temp){
+      let marked = new Map(Object.entries(temp));
+      setBookMarked(marked.get(props.job.jobId.toString()) ? true : false);
+    }
   }, [props.job]);
 
   return (
