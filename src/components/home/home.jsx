@@ -20,7 +20,7 @@ const Home = () => {
       <SearchBar label={"Search Your Next Job"} onClick={handleJobSearch} />
       <Container>
         {jobs && jobs.length > 0
-          ? jobs.map((job) => <CardComponent {...{ job }} />)
+          ? jobs.map((job) => <CardComponent job={job} showBookMark={true} />)
           : ""}
       </Container>
     </>
