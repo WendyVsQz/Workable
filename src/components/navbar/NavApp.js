@@ -1,6 +1,6 @@
 import WorkIcon from "@mui/icons-material/Work";
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./NavApp.css";
 
 const NavBar = () => {
@@ -13,13 +13,13 @@ const NavBar = () => {
       </Link>
       <ul>
         <li>
-          <Link to="/"> HOME </Link>
+          <NavLink to="/"> HOME </NavLink>
         </li>
         <li>
-          <Link to="/career-tips">CAREER TIPS</Link>
+          <NavLink to="/career-tips">CAREER TIPS</NavLink>
         </li>
         <li>
-          <Link to="/wishlist">WISHLIST</Link>
+          <NavLink to="/wishlist">WISHLIST</NavLink>
         </li>
       </ul>
     </nav>

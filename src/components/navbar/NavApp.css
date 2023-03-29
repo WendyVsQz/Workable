@@ -30,3 +30,8 @@ span{
     font-weight: 600;
     font-size: 1.5rem;
 }
+
+li a.active{
+  text-decoration: underline;
+  text-decoration-color: pink;
+}

@@ -8,16 +8,18 @@ import "./home.css";
 
 const Home = () => {
   const [jobs, setJobs] = useState();
+  const [loading, setLoading] = useState(false)
 
   const handleJobSearch = (input) => {
+    setLoading(true)
     searchJob(input).then((response) => {
       setJobs(response.data.results);
-    });
+    }).finally(() => setLoading(false));
   };
 
   return (
     <>
-      <SearchBar label={"Search Your Next Job"} onClick={handleJobSearch} />
+      <SearchBar label={"Search Your Next Job"} onClick={handleJobSearch} loading={loading}/>
       <Container>
         {jobs && jobs.length > 0
           ? jobs.map((job) => <CardComponent job={job} showBookMark={true} />)
