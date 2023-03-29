@@ -2,7 +2,7 @@ import { Button, InputAdornment, TextField } from "@mui/material";
 import React, { useState } from "react";
 import "./search-bar.css";
 
-const SearchBar = ({ label, onClick }) => {
+const SearchBar = ({ label, onClick, loading }) => {
   const [input, setInput] = useState("");
   return (
     <>
@@ -22,7 +22,7 @@ const SearchBar = ({ label, onClick }) => {
                   className="search-button"
                   onClick={() => onClick(input)}
                 >
-                  Search
+                  {loading ? "Loading...": "Search"}
                 </Button>
               </InputAdornment>
             ),
