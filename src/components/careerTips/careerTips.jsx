@@ -1,9 +1,17 @@
 import React from 'react'
+import CustomizedAccordions from './accordion'
+import './careerTips.css'
 
-const CareerTips = () => {
-  console.log("CareerTips");
+const careerTips = () => {
+  
   return (
-    <div>CareerTips</div>
+  <div>
+    <h1 className ="title is-1">
+    Career Tool Box 
+    </h1>
+    <CustomizedAccordions/>
+    </div>
   )
 }
-export default CareerTips
+
+export default careerTips
