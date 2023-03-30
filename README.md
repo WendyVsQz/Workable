@@ -12,7 +12,8 @@ Enter the job title you want to search and click the search button, it will gena
 # Demo:
 ![Kiku](./ezgif.com-video-to-gif.gif)
 # License:
-MIT
+This project is licensed under the undefined license.
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 # Contributing:
 - Laura Yuen Lok Si: @laurabbity915
 - Wendy Vasquez:@wendyVsQz
