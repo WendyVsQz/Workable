@@ -14,7 +14,7 @@ Enter the job title you want to search and click the search button, it will gena
 # License:
 MIT
 # Contributing:
-Laura Yuen Lok Si: @laurabbity915
-Wendy Vasquez:@wendyVsQz
-Alexander Sarpong Osei:@alexsosei
-Keith Howell:@44-khowell
+- Laura Yuen Lok Si: @laurabbity915
+- Wendy Vasquez:@wendyVsQz
+- Alexander Sarpong Osei:@alexsosei
+- Keith Howell:@44-khowell
