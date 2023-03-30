@@ -9,9 +9,12 @@ https://www.reed.co.uk/developers/jobseeker
 Go to our deployed link and try: https://stupendous-dieffenbachia-63ef9d.netlify.app/
 # Usage:
 Enter the job title you want to search and click the search button, it will genarate some related result in UK. You can click the bookmark button on the top right hand corner of the job result cards, the job card will save to your local storage. And you can also go to our Career Tips page to checkout more career tips!
+# Demo:
+![Kiku](./ezgif.com-video-to-gif.gif)
 # License:
 MIT
 # Contributing:
-Laura Yuen Lok Si, Wendy Vasquez, Alexander Sarpong Osei, Keith Howell
-
-![Kiku](./ezgif.com-video-to-gif.gif)
+Laura Yuen Lok Si: @laurabbity915
+Wendy Vasquez:@wendyVsQz
+Alexander Sarpong Osei:@alexsosei
+Keith Howell:@44-khowell
