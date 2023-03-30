@@ -4,3 +4,30 @@
     margin-right: auto;
     margin-left: auto;
 }
+
+@media screen and (max-width: 1200px) {
+    .wishlist-card {
+      margin: 10px 0;
+      width: 100%;
+      padding: 0;
+      text-align: center;
+  }
+  }
+
+  @media screen and (max-width: 768px) {
+    .wishlist-card {
+      margin: 10px 0;
+      width: 100%;
+      padding: 0;
+      text-align: center;
+  }
+  }
+/*mobiles*/
+  @media screen and (max-width: 480px) {
+    .wishlist-card {
+      margin: 10px 0;
+      width: 100%;
+      padding: 0;
+      text-align: center;
+  }
+  }

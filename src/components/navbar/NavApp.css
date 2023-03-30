@@ -35,3 +35,23 @@ li a.active{
   text-decoration: underline;
   text-decoration-color: pink;
 }
+
+@media screen and (max-width: 1200px) {
+  .nav ul {
+    margin: 10px 0;
+    width: 30%;
+    padding: 0;
+    text-align: right;
+}
+}
+
+@media screen and (max-width: 768px) {
+  .nav ul {
+    margin: 10px 0;
+    width: 50%;
+    padding: 0;
+    text-align: center;
+
+
+}
+}

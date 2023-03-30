@@ -30,3 +30,19 @@
 .empty-card-text {
     text-align: center;
 }
+
+@media screen and (max-width: 1200px) {
+    .custom-card-layout {
+        width: 100%;
+
+}
+}
+/*tablets*/
+@media screen and (max-width: 768px) {
+    .custom-card-layout {
+        width: 100%;
+
+}
+
+};
+
